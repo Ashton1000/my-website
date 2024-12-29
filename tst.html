@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GeoVectors - Pioneering the Mapping Revolution</title>
+<style>
+body{
+background: linear-gradient(135deg, black, dimgray);
+color: white;
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+transition: background 0.5s ease-in-out;}
+
+header{
+text-align: center;padding: 40px 20px;background: linear-gradient(90deg, #e67e22, #f4d03f);color: black;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);animation: slide-down 3s ease-out;}
+
+header h1{font-family: 'Poppins', sans-serif;font-size: 4.5rem;margin: 0;text-shadow: 3px 3px 8px rgba(0, 0, 0,1);}
+
+header h2{font-size: 1.8rem;margin: 15px 0 0;opacity: 0;animation: fade-in 3s ease-out forwards 2s;}
+
+section {padding: 40px 20px;text-align: center;max-width: 1200px;margin: 30px auto;animation: fade-in 1.5s ease-out forwards;}
+
+highlight {background: rgba(255, 215, 0, 0.3);padding: 5px 20px;border-radius: 5px;color: #f4d03f;}
+
+hr {border: 1px solid gold;margin: 30px auto;width: 80%;}
+
+ul {text-align: left;margin: 20px auto;width: 80%;list-style: none;padding: 0;}
+
+ul li {margin: 20px 0;font-size: 1.4rem;line-height: 2;animation: fade-in-up 1s ease-out forwards;}
+
+ul li:hover {transform: scale(1.05);transition: transform 0.3s;}
+
+ul li strong {color: #e67e22;}
+
+img {display: block;margin: 30px auto;border: 4px solid white;border-radius: 15px;max-width: 300px;transition: transform 0.3s, box-shadow 0.3s;}
+
+img:hover {transform: scale(1.1);box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);}
+
+a {color: gold;font-size: 1.8rem;text-decoration: none;font-weight: bold;margin: 20px auto;display: inline-block;transition: color 0.3s, transform 0.3s;}
+
+a:hover {text-decoration: underline;color: #e67e22;transform: translateY(-3px);}
+
+footer {text-align: center;padding: 20px;background: darkgray;color: lightgray;font-size: 1rem;}
+
+.cta {
+            display: inline-block;padding: 15px 30px;
+            margin: 30px auto;
+            background: linear-gradient(to right, #e67e22, #f4d03f);
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: transform 0.3s, background 0.3s;
+            animation: bounce-in 1s ease-out;
+         }
+
+.cta:hover {background: linear-gradient(to right, #f4d03f, #e67e22);
+transform: scale(1.1);
+color: white;}
+
+#features {margin-top: 100px;}
+
+@keyframes slide-down {
+     from  {          transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto; 
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.revolving-object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    border-radius: 50%; 
+    transform: translate(-50%, -50%);
+    animation: revolve 3s linear infinite;
+}
+
+@keyframes revolve {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>GeoVectors</h1>
+<h2>Pioneering the Mapping Revolution</h2>
+</header>
+<section>
+<h1>About GeoVectors</h1>
+<p><strong><i>GeoVectors is a <mark>state-of-the-art mapping solution</mark> engineered to provide unparalleled precision in geospatial data. Leveraging cutting-edge technology, it’s transforming how we understand and interact with the world.</i></strong></p>
+<hr>
+<h2>What is GeoVectors?</h2>
+<p><strong><i>GeoVectors integrates advanced mapping algorithms with user-friendly interfaces. From real-time tracking to detailed analytics, it redefines the future of geospatial services.</span></i></strong></p>
+<a href="#features" class="cta">Discover Features</a>
+<hr>
+<h3 id="features">Features and Capabilities</h3>
+<ul>
+<li><strong>High-Precision Mapping:</strong> Access geospatial data with unmatched accuracy.</li>
+<li><strong>Dynamic Visualization:</strong> Explore interactive 3D maps for a better perspective.</li>
+<li><strong>AI-Driven Insights:</strong> Gain actionable insights through intelligent data analysis.</li>
+<li><strong>Real-Time Tracking:</strong> Monitor locations with live updates and responsiveness.</li>
+<li><strong>Cloud Integration:</strong> Seamlessly integrate with cloud platforms for enhanced scalability.</li>
+</ul>
+<section>
+<h2>What People Are Saying</h2>
+<div class="testimonial">
+<p>"GeoVectors has revolutionized our mapping capabilities! The accuracy and visualization are top-notch."</p>
+- John Smith, Geospatial Analyst
+</div>
+</section>
+<section><h2>GeoVectors Logo Design</h2>
+<div class="logo-container">
+<img src="angelworld.webp" alt="GeoVectors visualization sample">
+<div class="revolving-object"></div>
+</div>
+<a href="https://geovectors.com">Visit GeoVectors Official Site</a>
+</section>
+</section>
+<footer>
+<p>&copy; 2024 GeoVectors. All rights reserved. Innovating geospatial solutions.</p>
+</footer>
+</body>
+</html>
